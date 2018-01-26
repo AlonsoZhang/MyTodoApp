@@ -3,23 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>My Todo App</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="js/base.js"></script>
 </head>
 <body>
 <div class="container">
+    <h1>My Todo</h1>
     <div class="add-task">
-        <input type="text">
-        <button>submit</button>
+        <input type="text" placeholder="e.g. 下午记得买菜">
+        <button type="submit">submit</button>
     </div>
-    <div class="tasks-list">
-        <span><input type="checkbox"></span>
-        <span class="task-content">item content 1</span>
-        <span>delete</span>
-        <span>detail</span>
+    <div class="task-list">
+        <div class="task-item">
+            <span><input type="checkbox"></span>
+            <span class="task-content">item content 1</span>
+            <span>delete</span>
+            <span>detail</span>
+        </div>
+        <div class="task-item">
+            <span><input type="checkbox"></span>
+            <span class="task-content">item content 1</span>
+            <span>delete</span>
+            <span>detail</span>
+        </div>
+        <div class="task-item">
+            <span><input type="checkbox"></span>
+            <span class="task-content">item content 1</span>
+            <span>delete</span>
+            <span>detail</span>
+        </div>
     </div>
-    <div class="task-detail ">
+    <div class="task-detail-mask">
+
+    </div>
+    <div class="task-detail">
         <div class="content"></div>
         <div>
             <div class="desc">
@@ -31,6 +50,7 @@
             <button type="submit">submit</button>
         </div>
     </div>
+
 </div>
 </body>
 </html>
